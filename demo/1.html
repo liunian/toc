@@ -1,0 +1,1187 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+
+
+  <title>acharts/achart-canvas · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+  <meta property="fb:app_id" content="1401488693436528">
+
+  <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="acharts/achart-canvas" name="twitter:title" /><meta content="achart-canvas - canvas for acharts" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/8200090?v=3&amp;s=400" name="twitter:image:src" />
+  <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/8200090?v=3&amp;s=400" property="og:image" /><meta content="acharts/achart-canvas" property="og:title" /><meta content="https://github.com/acharts/achart-canvas" property="og:url" /><meta content="achart-canvas - canvas for acharts" property="og:description" />
+
+  <meta name="browser-stats-url" content="/_stats">
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+
+  <meta name="pjax-timeout" content="1000">
+
+
+  <meta name="msapplication-TileImage" content="/windows-tile.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+  <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="2A784A6F:68AE:33480DD:549164A4" name="octolytics-dimension-request_id" />
+
+  <meta content="Rails, view, files#disambiguate" name="analytics-event" />
+
+
+
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="uhYAx5vNe17RX6MNZdHQvzV5ynIgs4FB91eAWsbEZkjReyeJ61W0/YSKP4kiXehSrKPP51IGduA39iXveq6xUA==" name="csrf-token" />
+
+  <link href="https://assets-cdn.github.com/assets/github-3de9aa62f3d89368b4b342ac79642c583a1aee37539a11d8e81e0422f043518c.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://assets-cdn.github.com/assets/github2-5d72e68a4ddd8b164268a756fe6ed34fb3b3e1af7ef7cfa82c39326954815694.css" media="all" rel="stylesheet" type="text/css" />
+
+
+
+
+  <meta http-equiv="x-pjax-version" content="40861e34f70b3f769d8680c26c192cba">
+
+
+  <meta name="description" content="achart-canvas - canvas for acharts">
+  <meta name="go-import" content="github.com/acharts/achart-canvas git https://github.com/acharts/achart-canvas.git">
+
+  <meta content="8200090" name="octolytics-dimension-user_id" /><meta content="acharts" name="octolytics-dimension-user_login" /><meta content="22367539" name="octolytics-dimension-repository_id" /><meta content="acharts/achart-canvas" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="22367539" name="octolytics-dimension-repository_network_root_id" /><meta content="acharts/achart-canvas" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/acharts/achart-canvas/commits/master.atom" rel="alternate" title="Recent Commits to achart-canvas:master" type="application/atom+xml">
+
+</head>
+
+
+<body class="logged_out  env-production macintosh vis-public">
+<a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+<div class="wrapper">
+
+
+
+
+
+
+
+  <div class="header header-logged-out" role="banner">
+    <div class="container clearfix">
+
+      <a class="header-logo-wordmark" href="https://github.com/" ga-data-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <span class="mega-octicon octicon-logo-github"></span>
+      </a>
+
+      <div class="header-actions" role="navigation">
+        <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+        <a class="button" href="/login?return_to=%2Facharts%2Fachart-canvas" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+      <div class="site-search repo-scope js-site-search" role="search">
+        <form accept-charset="UTF-8" action="/acharts/achart-canvas/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/acharts/achart-canvas/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+          <input type="text"
+                 class="js-site-search-field is-clearable"
+                 data-hotkey="s"
+                 name="q"
+                 placeholder="Search"
+                 data-global-scope-placeholder="Search GitHub"
+                 data-repo-scope-placeholder="Search"
+                 tabindex="1"
+                 autocapitalize="off">
+          <div class="scope-badge">This repository</div>
+        </form>
+      </div>
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+
+  <div id="start-of-content" class="accessibility-aid"></div>
+  <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <ul class="pagehead-actions">
+
+
+          <li>
+            <a href="/login?return_to=%2Facharts%2Fachart-canvas"
+               class="minibutton with-count star-button tooltipped tooltipped-n"
+               aria-label="You must be signed in to star a repository" rel="nofollow">
+              <span class="octicon octicon-star"></span>
+              Star
+            </a>
+
+            <a class="social-count js-social-count" href="/acharts/achart-canvas/stargazers">
+              0
+            </a>
+
+          </li>
+
+          <li>
+            <a href="/login?return_to=%2Facharts%2Fachart-canvas"
+               class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+               aria-label="You must be signed in to fork a repository" rel="nofollow">
+              <span class="octicon octicon-repo-forked"></span>
+              Fork
+            </a>
+            <a href="/acharts/achart-canvas/network" class="social-count">
+              0
+            </a>
+          </li>
+        </ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/acharts" class="url fn" itemprop="url" rel="author"><span itemprop="title">acharts</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/acharts/achart-canvas" class="js-current-repository" data-pjax="#js-repo-pjax-container">achart-canvas</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline with-full-navigation ">
+        <div class="repository-sidebar clearfix">
+
+          <nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+               role="navigation"
+               data-pjax="#js-repo-pjax-container"
+               data-issue-count-url="/acharts/achart-canvas/issues/counts">
+            <ul class="sunken-menu-group">
+              <li class="tooltipped tooltipped-w" aria-label="Code">
+                <a href="/acharts/achart-canvas" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /acharts/achart-canvas">
+                  <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+                  <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </a>    </li>
+
+              <li class="tooltipped tooltipped-w" aria-label="Issues">
+                <a href="/acharts/achart-canvas/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /acharts/achart-canvas/issues">
+                  <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+                  <span class="js-issue-replace-counter"></span>
+                  <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </a>      </li>
+
+              <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+                <a href="/acharts/achart-canvas/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /acharts/achart-canvas/pulls">
+                  <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+                  <span class="js-pull-replace-counter"></span>
+                  <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </a>    </li>
+
+
+            </ul>
+            <div class="sunken-menu-separator"></div>
+            <ul class="sunken-menu-group">
+
+              <li class="tooltipped tooltipped-w" aria-label="Pulse">
+                <a href="/acharts/achart-canvas/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /acharts/achart-canvas/pulse">
+                  <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+                  <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </a>    </li>
+
+              <li class="tooltipped tooltipped-w" aria-label="Graphs">
+                <a href="/acharts/achart-canvas/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /acharts/achart-canvas/graphs">
+                  <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+                  <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </a>    </li>
+            </ul>
+
+
+          </nav>
+
+          <div class="only-with-full-nav">
+
+
+            <div class="clone-url open"
+                 data-protocol-type="http"
+                 data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+              <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+              <div class="input-group js-zeroclipboard-container">
+                <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+                       value="https://github.com/acharts/achart-canvas.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+              </div>
+            </div>
+
+
+            <div class="clone-url "
+                 data-protocol-type="subversion"
+                 data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+              <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+              <div class="input-group js-zeroclipboard-container">
+                <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+                       value="https://github.com/acharts/achart-canvas" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+              </div>
+            </div>
+
+
+
+            <p class="clone-options">You can clone with
+              <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+              <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+                <span class="octicon octicon-question"></span>
+              </a>
+            </p>
+
+            <a href="http://mac.github.com" data-url="github-mac://openRepo/https://github.com/acharts/achart-canvas" class="minibutton sidebar-button js-conduit-rewrite-url" title="Save acharts/achart-canvas to your computer and use it in GitHub Desktop." aria-label="Save acharts/achart-canvas to your computer and use it in GitHub Desktop.">
+              <span class="octicon octicon-device-desktop"></span>
+              Clone in Desktop
+            </a>
+
+
+            <a href="/acharts/achart-canvas/archive/master.zip"
+               class="minibutton sidebar-button"
+               aria-label="Download the contents of acharts/achart-canvas as a zip file"
+               title="Download the contents of acharts/achart-canvas as a zip file"
+               rel="nofollow">
+              <span class="octicon octicon-cloud-download"></span>
+              Download ZIP
+            </a>
+          </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          <span id="js-show-full-navigation"></span>
+
+          <div class="repository-meta js-details-container ">
+            <div class="repository-description">
+              canvas for acharts
+            </div>
+
+
+
+          </div>
+
+          <div class="overall-summary overall-summary-bottomless">
+
+            <div class="stats-switcher-viewport js-stats-switcher-viewport">
+              <div class="stats-switcher-wrapper">
+                <ul class="numbers-summary">
+                  <li class="commits">
+                    <a data-pjax href="/acharts/achart-canvas/commits/master">
+                      <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              11
+            </span>
+                      commits
+                    </a>
+                  </li>
+                  <li>
+                    <a data-pjax href="/acharts/achart-canvas/branches">
+                      <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            1
+          </span>
+                      branch
+                    </a>
+                  </li>
+
+                  <li>
+                    <a data-pjax href="/acharts/achart-canvas/releases">
+                      <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            0
+          </span>
+                      releases
+                    </a>
+                  </li>
+
+                  <li>
+
+                    <a href="/acharts/achart-canvas/graphs/contributors">
+                      <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      0
+    </span>
+                      contributors
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="repository-lang-stats">
+                  <ol class="repository-lang-stats-numbers">
+                    <li>
+                      <a href="/acharts/achart-canvas/search?l=javascript">
+                        <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                        <span class="lang">JavaScript</span>
+                        <span class="percent">100%</span>
+                      </a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+            <a href="#"
+               class="repository-lang-stats-graph js-toggle-lang-stats"
+               style="background-color:#f1e05a">
+              <span class="language-color" style="width:100%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+            </a>
+          </div>
+
+          <include-fragment src="/acharts/achart-canvas/show_partial?partial=recently_touched_branches_list"></include-fragment>
+
+          <div class="file-navigation in-mid-page">
+            <a href="/acharts/achart-canvas/find/master"
+               class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s right"
+               data-pjax
+               data-hotkey="t"
+               aria-label="Quickly jump between files">
+              <span class="octicon octicon-list-unordered"></span>
+            </a>
+            <a href="/acharts/achart-canvas/compare" aria-label="Compare, review, create a pull request" class="minibutton primary tooltipped tooltipped-s left compare-button" aria-label="Compare &amp; review" data-pjax>
+              <span class="octicon octicon-git-compare"></span>
+            </a>
+
+
+            <div class="select-menu js-menu-container js-select-menu left">
+  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w"
+        data-master-branch="master"
+        data-ref="master"
+        title="master"
+        role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+              <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+                <div class="select-menu-modal">
+                  <div class="select-menu-header">
+                    <span class="select-menu-title">Switch branches/tags</span>
+                    <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+                  </div> <!-- /.select-menu-header -->
+
+                  <div class="select-menu-filters">
+                    <div class="select-menu-text-filter">
+                      <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+                    </div>
+                    <div class="select-menu-tabs">
+                      <ul>
+                        <li class="select-menu-tab">
+                          <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+                        </li>
+                        <li class="select-menu-tab">
+                          <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+                        </li>
+                      </ul>
+                    </div><!-- /.select-menu-tabs -->
+                  </div><!-- /.select-menu-filters -->
+
+                  <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+                    <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+                      <div class="select-menu-item js-navigation-item selected">
+                        <span class="select-menu-item-icon octicon octicon-check"></span>
+                        <a href="/acharts/achart-canvas/tree/master"
+                           data-name="master"
+                           data-skip-pjax="true"
+                           rel="nofollow"
+                           class="js-navigation-open select-menu-item-text css-truncate-target"
+                           title="master">master</a>
+                      </div> <!-- /.select-menu-item -->
+                    </div>
+
+                    <div class="select-menu-no-results">Nothing to show</div>
+                  </div> <!-- /.select-menu-list -->
+
+                  <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+                    <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+                    </div>
+
+                    <div class="select-menu-no-results">Nothing to show</div>
+                  </div> <!-- /.select-menu-list -->
+
+                </div> <!-- /.select-menu-modal -->
+              </div> <!-- /.select-menu-modal-holder -->
+            </div> <!-- /.select-menu -->
+
+
+
+            <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/acharts/achart-canvas" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">achart-canvas</span></a></span></span><span class="separator">/</span><form action="/login?return_to=%2Facharts%2Fachart-canvas" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-plus" data-test-id="create-new-git-file" role="button"></span></form></div>
+          </div>
+
+
+
+
+          <div class="commit commit-tease js-details-container" >
+            <p class="commit-title ">
+              <a href="/acharts/achart-canvas/commit/6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" class="message" data-pjax="true" title="up to 1.1.0">up to 1.1.0</a>
+
+            </p>
+            <div class="commit-meta">
+              <button aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+              <a href="/acharts/achart-canvas/commit/6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" class="sha-block" data-pjax>latest commit <span class="sha">6e7dfe9484</span></a>
+
+              <div class="authorship">
+                <img alt="" class="avatar" height="20" src="https://2.gravatar.com/avatar/79b8a199449fbcfeec38905d9bcc25ed?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="20" />
+                <span class="author-name"><span>xiaoqing.dongxq</span></span>
+                authored <time class="updated" datetime="2014-12-11T13:47:10Z" is="relative-time">Dec 11, 2014</time>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="file-wrap">
+
+            <table class="files" data-pjax>
+
+
+              <tbody>
+              <tr class="warning include-fragment-error">
+                <td class="icon"><span class="octicon octicon-alert"></span></td>
+                <td class="content" colspan="3">Failed to load latest commit information.</td>
+              </tr>
+
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-directory"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/tree/master/api" class="js-directory-link" id="8a5da52ed126447d359e70c05721a8aa-7f777d515b2b99d41b9adfaecee541033b5ef2dc" title="api">api</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/b897e91a8545253d6a105c052c0beb88eaa69326" class="message" data-pjax="true" title="demo &amp; docs">demo &amp; docs</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-09-09T07:27:22Z" is="time-ago">Sep 9, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-directory"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/tree/master/examples" class="js-directory-link" id="bfebe34154a0dfd9fc7b447fc9ed74e9-3aa04a43374962cae05d62da5098ec1a817b0d3a" title="examples">examples</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/90a402959db2fff18965202f3e198752efe029b1" class="message" data-pjax="true" title="add clip">add clip</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-09-25T07:18:26Z" is="time-ago">Sep 25, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-directory"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/tree/master/src" class="js-directory-link" id="25d902c24283ab8cfbac54dfa101ad31-212f18928386db5e210888988067ae074e55b8f9" title="src">src</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" class="message" data-pjax="true" title="up to 1.1.0">up to 1.1.0</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-12-11T13:47:10Z" is="time-ago">Dec 11, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-directory"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/tree/master/tests" class="js-directory-link" id="b61a6d542f9036550ba9c401c80f00ef-4554b34156fc523912047cb3e259020b78945fc8" title="tests">tests</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" class="message" data-pjax="true" title="up to 1.1.0">up to 1.1.0</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-12-11T13:47:10Z" is="time-ago">Dec 11, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-directory"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/tree/master/wiki" class="js-directory-link" id="d54b7ba27571a2f00b38ed9273b974f2-956b2efd7f1126f22d60845238c1e7b70406a70e" title="wiki">wiki</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/44cf7adf66d39a44c0e2d3527584adeb78ec2ddc" class="message" data-pjax="true" title="update docs">update docs</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-09-10T03:35:55Z" is="time-ago">Sep 10, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-99264bf76b77aea9391aae69d8718a01fa0e7fb8" title=".gitignore">.gitignore</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/be002f28022e5c5a94042eab48296286f021376b" class="message" data-pjax="true" title="complete unitest">complete unitest</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-08-26T06:41:02Z" is="time-ago">Aug 26, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/.spmignore" class="js-directory-link" id="01853be5fac5ff3b2c99c05d275dba00-af6cf806e45cccfe5edc2bf112a2dd24adbe340f" title=".spmignore">.spmignore</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/be002f28022e5c5a94042eab48296286f021376b" class="message" data-pjax="true" title="complete unitest">complete unitest</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-08-26T06:41:02Z" is="time-ago">Aug 26, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/HISTORY.md" class="js-directory-link" id="88dc7475eedf918122374be6d7c2c151-afe85229d6cb5b9df5435de01b19d0418ed3bd57" title="HISTORY.md">HISTORY.md</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/acec47d40669d8c880a4c2c986ccae0d9c17ee58" class="message" data-pjax="true" title="first commit">first commit</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-08-19T05:26:07Z" is="time-ago">Aug 19, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/README.md" class="js-directory-link" id="04c6e90faac2675aa89e2176d2eec7d8-5c9ab01535846568b40809f87511c25225e06ad1" title="README.md">README.md</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/e744ef55700834238b7a13f41be6747b67782337" class="message" data-pjax="true" title="update docs">update docs</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-09-10T03:11:26Z" is="time-ago">Sep 10, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/index.js" class="js-directory-link" id="168726dbe96b3ce427e7fedce31bb0bc-b3e81508386e748900934ce05f4ac5d99223a657" title="index.js">index.js</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/e744ef55700834238b7a13f41be6747b67782337" class="message" data-pjax="true" title="update docs">update docs</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-09-10T03:11:26Z" is="time-ago">Sep 10, 2014</time></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="icon">
+                  <span class="octicon octicon-file-text"></span>
+                  <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+                </td>
+                <td class="content">
+                  <span class="css-truncate css-truncate-target"><a href="/acharts/achart-canvas/blob/master/package.json" class="js-directory-link" id="b9cfc7f2cdf78a7f4b91a753d10865a2-b70a95e4fb2de5a3e30a00f59a5327083b6ae889" title="package.json">package.json</a></span>
+                </td>
+                <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="/acharts/achart-canvas/commit/6e7dfe94843731e5e22b2de18f52a05f0ab1a4a5" class="message" data-pjax="true" title="up to 1.1.0">up to 1.1.0</a>
+            </span>
+                </td>
+                <td class="age">
+                  <span class="css-truncate css-truncate-target"><time datetime="2014-12-11T13:47:10Z" is="time-ago">Dec 11, 2014</time></span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+          <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+            <h3>
+              <span class="octicon octicon-book"></span>
+              README.md
+            </h3>
+
+            <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+              <a id="user-content-achart-canvas-" class="anchor" href="#achart-canvas-" aria-hidden="true"><span class="octicon octicon-link"></span></a>achart-canvas <a href="http://spmjs.io/package/achart-canvas"><img src="https://camo.githubusercontent.com/8f69c4329c2420252bf5cfc9530f245ec52ff3b9/687474703a2f2f73706d6a732e696f2f62616467652f6163686172742d63616e766173" alt="spm version" data-canonical-src="http://spmjs.io/badge/achart-canvas" style="max-width:100%;"></a>
+            </h1>
+
+              <hr>
+
+              <p>图表的基础库，封装了raphael.js，用于增删改查图形，增加了分组概念。</p>
+
+              <ul class="task-list">
+                <li><a href="/acharts/achart-canvas/blob/master/wiki">wiki 文档</a></li>
+                <li><a href="/acharts/achart-canvas/blob/master/examples">demo 示例</a></li>
+              </ul>
+
+              <hr>
+
+              <h2>
+                <a id="user-content-install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>$ spm install achart-canvas --save
+</code></pre>
+
+              <h2>
+                <a id="user-content-使用" class="anchor" href="#%E4%BD%BF%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用</h2>
+
+              <h3>
+                <a id="user-content-示例" class="anchor" href="#%E7%A4%BA%E4%BE%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>示例</h3>
+
+              <div class="highlight highlight-js"><pre><span class="pl-s">var</span> Canvas <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">'</span>achart-canvas<span class="pl-pds">'</span></span>);
+
+<span class="pl-s">var</span> canvas <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Canvas</span>({id <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>canvas<span class="pl-pds">'</span></span>});
+
+canvas.addShape({
+  type <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>rect<span class="pl-pds">'</span></span>,
+  attrs <span class="pl-k">:</span> {
+    width <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+    height <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+    x <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+    y <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+    stroke <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>red<span class="pl-pds">'</span></span>
+  }
+});
+</pre></div>
+
+              <h2>
+                <a id="user-content-内容" class="anchor" href="#%E5%86%85%E5%AE%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>内容</h2>
+
+              <ul class="task-list">
+                <li>画布(canvas)</li>
+                <li>分组(Group)</li>
+                <li>各种图形(Shape)</li>
+                <li>渐变</li>
+                <li>事件</li>
+              </ul>
+
+              <h3>
+                <a id="user-content-canvas" class="anchor" href="#canvas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Canvas</h3>
+
+              <ol class="task-list">
+                <li>创建Canvas 对象
+                  <code>js
+                    var canvas = new Canvas({id : 'id',width : 500,height : 500});
+                  </code>
+                </li>
+                <li>canvas 操作
+                  <code>js
+                    canvas.setSize(100,200); //设置宽高
+                    canvas.setViewBox(x, y, w, h); //设置视图范围，用于缩放
+                    canvas.getPoint(clientX,clientY); //将页面的坐标轴转换成canvas上的坐标点
+                  </code>
+                </li>
+                <li>
+                  <p>canvas api</p>
+
+                  <h4>
+                    <a id="user-content-配置项" class="anchor" href="#%E9%85%8D%E7%BD%AE%E9%A1%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>配置项</h4>
+
+                  <ul class="task-list">
+                    <li>id : 容器的id</li>
+                    <li>width : 宽度</li>
+                    <li>heigth ： 高度</li>
+                    <li>viewbox : 缩放</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-方法" class="anchor" href="#%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h4>
+
+                  <ul class="task-list">
+                    <li>setSize(width,height) 设置宽高</li>
+                    <li>setViewBox(x, y, w, h) 设置视图范围，用于缩放</li>
+                    <li>getPoint(clientX,clientY) 将页面的坐标轴转换成canvas上的坐标点</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-通用属性和方法" class="anchor" href="#%E9%80%9A%E7%94%A8%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/common.md">通用属性和方法</a>
+                  </h4>
+
+                  <h4>
+                    <a id="user-content-容器方法" class="anchor" href="#%E5%AE%B9%E5%99%A8%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/container.md">容器方法</a>
+                  </h4>
+                </li>
+              </ol>
+
+              <h3>
+                <a id="user-content-group" class="anchor" href="#group" aria-hidden="true"><span class="octicon octicon-link"></span></a>Group</h3>
+
+              <ol class="task-list">
+                <li>
+                  <p>创建分组</p>
+
+                  <div class="highlight highlight-js"><pre>
+canvas.addGroup({id <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>id<span class="pl-pds">'</span></span>,x <span class="pl-k">:</span> <span class="pl-c1">100</span>, y <span class="pl-k">:</span> <span class="pl-c1">100</span>}); <span class="pl-c">//添加分组</span>
+</pre></div>
+                </li>
+                <li>
+                  <p>分组操作</p>
+
+                  <div class="highlight highlight-js"><pre>canvas.<span class="pl-s3">find</span>(<span class="pl-s1"><span class="pl-pds">'</span>id<span class="pl-pds">'</span></span>); <span class="pl-c">//查找分组</span>
+
+<span class="pl-s">var</span> group <span class="pl-k">=</span> canvas.addGroup() <span class="pl-c">//添加匿名分组</span>
+
+group.addGroup() <span class="pl-c">//分组嵌套</span>
+
+group.move(x,y); <span class="pl-c">//移动到对应的点</span>
+
+group.<span class="pl-s3">clear</span>(); <span class="pl-c">//清除分组内容</span>
+group.<span class="pl-s3">remove</span>(); <span class="pl-c">//移除分组</span>
+</pre></div>
+                </li>
+                <li>
+                  <p>api</p>
+
+                  <h4>
+                    <a id="user-content-配置项-1" class="anchor" href="#%E9%85%8D%E7%BD%AE%E9%A1%B9-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>配置项</h4>
+
+                  <ul class="task-list">
+                    <li>x : 偏移的x坐标</li>
+                    <li>y : 偏移的y坐标</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-方法-1" class="anchor" href="#%E6%96%B9%E6%B3%95-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h4>
+
+                  <ul class="task-list">
+                    <li>containsElement(dom) 是否包含指定的dom</li>
+                    <li>move(x,y) 移动到对应的坐标</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-通用属性和方法-1" class="anchor" href="#%E9%80%9A%E7%94%A8%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/common.md">通用属性和方法</a>
+                  </h4>
+
+                  <h4>
+                    <a id="user-content-画布元素属性和方法" class="anchor" href="#%E7%94%BB%E5%B8%83%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/item.md">画布元素属性和方法</a>
+                  </h4>
+
+                  <h4>
+                    <a id="user-content-容器方法-1" class="anchor" href="#%E5%AE%B9%E5%99%A8%E6%96%B9%E6%B3%95-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/container.md">容器方法</a>
+                  </h4>
+                </li>
+              </ol>
+
+              <h3>
+                <a id="user-content-shape" class="anchor" href="#shape" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shape</h3>
+
+              <ol class="task-list">
+                <li>
+                  <p>创建图形</p>
+
+                  <div class="highlight highlight-js"><pre>
+  <span class="pl-s">var</span> shape <span class="pl-k">=</span> canvas.addShape({
+      type <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>rect<span class="pl-pds">'</span></span>,
+      id <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>r1<span class="pl-pds">'</span></span>,
+      attrs <span class="pl-k">:</span> {
+        width <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        height <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        x <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        y <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        stroke <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>red<span class="pl-pds">'</span></span>
+      }
+  });
+
+  <span class="pl-s">var</span> shape <span class="pl-k">=</span> canvas.addShape(<span class="pl-s1"><span class="pl-pds">'</span>rect<span class="pl-pds">'</span></span>,{
+      width <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+      height <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+      x <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+      y <span class="pl-k">:</span> <span class="pl-c1">100</span>,
+      stroke <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>red<span class="pl-pds">'</span></span>
+  });
+</pre></div>
+                </li>
+                <li>
+                  <p>图形类型</p>
+
+                  <h4>
+                    <a id="user-content-shape基类" class="anchor" href="#shape%E5%9F%BA%E7%B1%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shape(基类)</h4>
+
+                  <p>下面的配置项不同于图形控件的属性，而是作为图形绘制时的属性使用，所以称之为<code>绘制属性</code></p>
+
+                  <ul class="task-list">
+                    <li>arrow-end : 类型: classic, block, open, oval, diamond, none, width: wide, narrow, midium, length: long, short, midium.</li>
+                    <li>cursor ： 鼠标形状</li>
+                    <li>fill ： 填充颜色</li>
+                    <li>fill-opacity ： 填充透明度</li>
+                    <li>opacity ： 整体透明度</li>
+                    <li>stroke ： 边框</li>
+                    <li>stroke-dasharray ： [“”, “-”, “.”, “-.”, “-..”, “. ”, “- ”, “--”, “- .”, “--.”, “--..”]</li>
+                    <li>stroke-linecap ：线的端点，butt、 round 及 square。默认值是 butt</li>
+                    <li>stroke-linejoin ： 线的连接处的样式，可取的值是 :bevel、round、miter。 默认值是 miter</li>
+                    <li>stroke-miterlimit ： 线连接处的延长</li>
+                    <li>stroke-opacity ： 线的透明度</li>
+                    <li>stroke-width : 线的宽度</li>
+                    <li>transform ： transform的属性值</li>
+                  </ul>
+
+                  <p>详情参考： <a href="http://raphaeljs.com/reference.html#Element.attr">raphael属性</a></p>
+
+                  <h4>
+                    <a id="user-content-circle" class="anchor" href="#circle" aria-hidden="true"><span class="octicon octicon-link"></span></a>circle</h4>
+
+                  <ul class="task-list">
+                    <li>cx 圆心x坐标</li>
+                    <li>cy 圆心y坐标</li>
+                    <li>r 半径</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-rect" class="anchor" href="#rect" aria-hidden="true"><span class="octicon octicon-link"></span></a>rect</h4>
+
+                  <ul class="task-list">
+                    <li>x 顶点x坐标</li>
+                    <li>y 顶点y坐标</li>
+                    <li>width 宽</li>
+                    <li>height 高</li>
+                    <li>r 圆角</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-ellipse" class="anchor" href="#ellipse" aria-hidden="true"><span class="octicon octicon-link"></span></a>ellipse</h4>
+
+                  <ul class="task-list">
+                    <li>cx 圆心x坐标</li>
+                    <li>cy 圆心y坐标</li>
+                    <li>rx x轴半径</li>
+                    <li>ry y轴半径</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-path" class="anchor" href="#path" aria-hidden="true"><span class="octicon octicon-link"></span></a>path</h4>
+
+                  <ul class="task-list">
+                    <li>path 路径</li>
+                    <li>
+                      <p>path中支持一下关键字大写字母表示相对于canvas顶点的坐标，小写字母表示相对于前一个点的相对位置,+号表示可以多个连续的点</p>
+
+                      <ol class="task-list">
+                        <li>M 移动到某点 M(x,y)</li>
+                        <li>L 画一条线到某点 L(x,y)+ 例如 ： 'L 100 100 200 200' = 'L 100 100 L 200 200'</li>
+                        <li>H 水平画线 H(x)+</li>
+                        <li>V 垂直画线 V(y)+</li>
+                        <li>A 画圆形弧线 O(cx,cy,r,startAngle,endAngle,counterClockwise)+ 最后一个参数false表示顺时针，true表示逆时针</li>
+                        <li>Q quadratic curve 贝塞尔曲线 Q(x1,y1,x,y)+ 参考Q &amp; T</li>
+                        <li>T 前一个节点使用了Q 后控制点可以省略 T(x,y)+</li>
+                        <li>C cubic Bézier 三次方贝塞尔曲线 C(x1,y1,x2,y2,x,y)+ 参考C &amp; S</li>
+                        <li>S cubic Bézier 三次方贝塞尔曲线 省略控制点 S(x,y)+</li>
+                        <li>R 光滑曲线的快捷方式 R(x,y)+</li>
+                        <li>Z 结束path 跟上一个M 的节点连接</li>
+                      </ol>
+                    </li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-line" class="anchor" href="#line" aria-hidden="true"><span class="octicon octicon-link"></span></a>line</h4>
+
+                  <ul class="task-list">
+                    <li>x1 起点x坐标</li>
+                    <li>y1 起点x坐标</li>
+                    <li>x2 结束点x坐标</li>
+                    <li>y2 结束点x坐标</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-polyline" class="anchor" href="#polyline" aria-hidden="true"><span class="octicon octicon-link"></span></a>polyLine</h4>
+
+                  <ul class="task-list">
+                    <li>points 多点线段的连接点</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-polygon" class="anchor" href="#polygon" aria-hidden="true"><span class="octicon octicon-link"></span></a>polygon</h4>
+
+                  <ul class="task-list">
+                    <li>points 多边形的顶点</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-marker" class="anchor" href="#marker" aria-hidden="true"><span class="octicon octicon-link"></span></a>marker</h4>
+
+                  <p>自定义标记，用于一些简单的图标</p>
+
+                  <ul class="task-list">
+                    <li>radius 半径</li>
+                    <li>x 中心点x坐标</li>
+                    <li>y 中心点y坐标</li>
+                    <li>
+                      <p>symbol 标记的类型，目前支持： circle、square、diamond、triangle、triangle-down几种类型，除此之外</p>
+
+                      <ol class="task-list">
+                        <li>如果symbol 是个图片url 则表示是一个图片</li>
+                        <li>symbol是个函数则根据函数生成标记</li>
+                      </ol>
+                    </li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-text" class="anchor" href="#text" aria-hidden="true"><span class="octicon octicon-link"></span></a>text</h4>
+
+                  <ul class="task-list">
+                    <li>x x坐标</li>
+                    <li>y y坐标</li>
+                    <li>text 文本</li>
+                    <li>font 字体 也可以单独使用 font-family，font-size和font-weight</li>
+                    <li>text-anchor 文本对齐方式 [“start”, “middle”, “end”], default is “middle”</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-label" class="anchor" href="#label" aria-hidden="true"><span class="octicon octicon-link"></span></a>label</h4>
+
+                  <ul class="task-list">
+                    <li>带有旋转角度的文本，拥有text的所有属性</li>
+                    <li>rotate 旋转角度 -360 到 360</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-image" class="anchor" href="#image" aria-hidden="true"><span class="octicon octicon-link"></span></a>image</h4>
+
+                  <ul class="task-list">
+                    <li>src 图片地址</li>
+                    <li>x 顶点x坐标</li>
+                    <li>y 顶点y坐标</li>
+                    <li>width 宽</li>
+                    <li>height 高</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>图形操作</p>
+
+                  <div class="highlight highlight-js"><pre>
+shape.attr({
+  width <span class="pl-k">:</span> <span class="pl-c1">200</span>,
+  height <span class="pl-k">:</span> <span class="pl-c1">150</span>
+});
+
+shape.attr(<span class="pl-s1"><span class="pl-pds">'</span>stroke<span class="pl-pds">'</span></span>,<span class="pl-s1"><span class="pl-pds">'</span>blue<span class="pl-pds">'</span></span>);
+
+shape.translate(<span class="pl-c1">20</span>,<span class="pl-c1">30</span>);
+</pre></div>
+                </li>
+                <li>
+                  <p>api</p>
+
+                  <h4>
+                    <a id="user-content-方法-2" class="anchor" href="#%E6%96%B9%E6%B3%95-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h4>
+
+                  <ul class="task-list">
+                    <li>getPath() 获取path</li>
+                    <li>transform(tstr) 平移、翻转、放大缩小</li>
+                    <li>translate(x,y) 平移</li>
+                    <li>scale(sx, sy, cx,cy) 以圆心放大缩小</li>
+                    <li>rotate(angle,cx,cy) 旋转</li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-通用属性和方法-2" class="anchor" href="#%E9%80%9A%E7%94%A8%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/common.md">通用属性和方法</a>
+                  </h4>
+
+                  <h4>
+                    <a id="user-content-画布元素属性和方法-1" class="anchor" href="#%E7%94%BB%E5%B8%83%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/acharts/achart-canvas/blob/master/api/item.md">画布元素属性和方法</a>
+                  </h4>
+                </li>
+              </ol>
+
+              <h3>
+                <a id="user-content-渐变" class="anchor" href="#%E6%B8%90%E5%8F%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>渐变</h3>
+
+              <ul class="task-list">
+                <li>
+                  <p>在图形的fill 和 stroke属性上可以使用渐变，氛围线性渐变和圆形渐变</p>
+
+                  <h4>
+                    <a id="user-content-线性渐变" class="anchor" href="#%E7%BA%BF%E6%80%A7%E6%B8%90%E5%8F%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>线性渐变</h4>
+
+                  <ul class="task-list">
+                    <li>格式 ： ‹angle›-‹colour›[-‹colour›[:‹offset›]]*-‹colour› 例如 0-#fff-#f00:20-#000 </li>
+                  </ul>
+
+                  <h4>
+                    <a id="user-content-圆形渐变" class="anchor" href="#%E5%9C%86%E5%BD%A2%E6%B8%90%E5%8F%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>圆形渐变</h4>
+
+                  <ul class="task-list">
+                    <li>格式：r[(‹fx›, ‹fy›)]‹colour›[-‹colour›[:‹offset›]]*-‹colour› 例如： r(0.25, 0.75)#fff-#000</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h3>
+                <a id="user-content-事件" class="anchor" href="#%E4%BA%8B%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>事件</h3>
+
+              <ul class="task-list">
+                <li>可以在Canvas,Group,和Shape 上绑定事件</li>
+                <li>on,off,fire是对应的绑定事件、移除事件和触发事件的方式</li>
+                <li>可以自定义事件</li>
+                <li>ev.target.shape可以取的到对应的图形</li>
+              </ul>
+
+              <h2>
+                <a id="user-content-links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>links</h2>
+
+              <ul class="task-list">
+                <li><a href="/acharts/achart-canvas/blob/master/examples">demo 示例</a></li>
+                <li><a href="/acharts/achart-canvas/blob/master/wiki">wiki 文档</a></li>
+              </ul>
+            </article>
+          </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+</div><!-- /.wrapper -->
+
+<div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="https://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.03974s from github-fe136-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li><a href="/site/terms">Terms</a></li>
+      <li><a href="/site/privacy">Privacy</a></li>
+      <li><a href="/security">Security</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+<div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+       aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+<div id="ajax-error-message" class="flash flash-error">
+  <span class="octicon octicon-alert"></span>
+  <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+  Something went wrong with that request. Please try again.
+</div>
+
+
+<script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-fc447938e306b7b2c26a33cfee9dfda9052aeb1aa6ad84b72f1b35fd008efe9e.js" type="text/javascript"></script>
+<script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-77fd7bede3019a6f465dfa188ef8e672779d747b31c394bb3f02c6a29cf3430c.js" type="text/javascript"></script>
+
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../dist/toc.js"></script>
+<!--<script src="../src/Chapter.js"></script>-->
+<!--<script src="../src/Toc.js"></script>-->
+<!--<script src="../src/index.js"></script>-->
+
+</body>
+</html>

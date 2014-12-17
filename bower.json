@@ -1,0 +1,22 @@
+{
+  "name": "gitlabHelper",
+  "version": "1.0.0",
+  "authors": [
+    "白荻 <dengjij@alibaba-inc.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
