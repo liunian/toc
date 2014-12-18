@@ -20,15 +20,14 @@
       if (record.target === observeElement) {
         if (instance) {
           instance.tocBd = null
-          instance.tocBtn.off('click')
           instance.tocBtn = null
-          instance.tocBox.remove()
+          instance.tocBox.parentNode.removeChild(instance.tocBox)
           instance.tocBox = null
         }
-        var $ele = $('#' + tocId)
-        if ($ele) {
-          $ele.remove()
-          $ele = null
+        var ele = document.getElementById(tocId)
+        if (ele) {
+          ele.parentNode.removeChild(ele)
+          ele = null
         }
         instance = createToc(tocId)
       }
@@ -56,12 +55,8 @@
     var container = null
 
     for (var i = 0, l = containerSelector.length; i < l; i++) {
-      container = $(containerSelector[i])
-      if (!container.length) {
-        container = null
-      } else {
-        break
-      }
+      container = document.querySelector(containerSelector[i])
+      if (container) break
     }
 
     if (!container) {
@@ -70,13 +65,19 @@
 
     var toc = new Toc(container)
 
-    var tocBox = $('<div/>'),
-      tocBd = $('<div/>'),
-      tocBtn = $('<button>TOC</button>');
+    var tocBox = document.createElement('div'),
+      tocBd = document.createElement('div'),
+      tocBtn = document.createElement('button')
 
-    tocBd.html(toc.toHTML()).addClass('tocBd')
-    tocBox.addClass('tocBox').append(tocBd).prependTo(container)
-      .append(tocBtn).attr('id', boxId)
+    tocBtn.innerHTML = 'TOC'
+    tocBd.classList.add('tocBd')
+    tocBd.innerHTML = toc.toHTML()
+
+    tocBox.id = boxId
+    tocBox.classList.add('tocBox')
+    tocBox.appendChild(tocBd)
+    tocBox.appendChild(tocBtn)
+    container.appendChild(tocBox)
 
     // create styles
     // use link element before build (for test)
@@ -95,18 +96,32 @@
     }
 
     // events
-    tocBtn.on('click', function() {
-      tocBd.fadeToggle()
-    })
+    tocBtn.addEventListener('click', toggleToc, false)
 
-    $(document).on('click', function(e) {
-      var t = e.target,
-        c = tocBox.get(0)
+    document.addEventListener('click', function(e) {
+      var t = e.target
 
-      if (!(t === c || $.contains(c, t))) {
-        tocBd.fadeOut()
+      if (!(t === tocBox || tocBox.contains(t))) {
+        hideToc()
       }
-    })
+    }, false)
+
+    var showCls = 'toc-show'
+    function hideToc() {
+      tocBd.classList.remove(showCls)
+    }
+
+    function showToc() {
+      tocBd.classList.add(showCls)
+    }
+
+    function toggleToc() {
+      if (tocBd.classList.contains(showCls)) {
+        hideToc()
+      } else {
+        showToc()
+      }
+    }
 
     return {
       toc   : toc,

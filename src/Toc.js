@@ -19,7 +19,10 @@ function Toc(container) {
 }
 
 Toc.prototype.parseChapters = function() {
-  var titles = this.container.find(this.selector)
+  // hack
+  // test code use jquery to parse, while use querySelector in browser
+  var titles = typeof document !== 'undefined' ? this.container.querySelectorAll(this.selector) :
+               this.container.find(this.selector)
   if (!titles.length) return
 
   var lastLevel = 1,

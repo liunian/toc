@@ -1,6 +1,6 @@
 {
   "name": "gitlabHelper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     "白荻 <dengjij@alibaba-inc.com>"
   ],
@@ -17,6 +17,5 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1"
   }
 }

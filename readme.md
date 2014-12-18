@@ -14,4 +14,4 @@
 
 - `Chapter.js` 表示一个章节，其下可有子章节
 - `Toc.js` 表示整个目录
-- `index.js` 是针对 Github 和 Gitlab 的入口，此处依赖 jQuery。但不引入，而是假定页面存在 jQuery
+- `index.js` 是针对 Github 和 Gitlab 的入口
