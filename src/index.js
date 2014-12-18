@@ -3,7 +3,8 @@
  */
 
 (function() {
-  var instance = createToc()
+  var tocId = 'JMdToc'
+  var instance = createToc(tocId)
 
   // observe, so then change with ajax or pjax, try to update it
   var isGithub = location.hostname === 'github.com'
@@ -24,7 +25,12 @@
           instance.tocBox.remove()
           instance.tocBox = null
         }
-        instance = createToc()
+        var $ele = $('#' + tocId)
+        if ($ele) {
+          $ele.remove()
+          $ele = null
+        }
+        instance = createToc(tocId)
       }
     })
   })
@@ -36,8 +42,9 @@
   /**
    *
    * @returns {*}
+   * @param boxId {String}
    */
-  function createToc() {
+  function createToc(boxId) {
     var containerSelector = [
       '#readme > .markdown-body',   // github
       '#README > .wiki',           // gitlab directory
@@ -69,7 +76,7 @@
 
     tocBd.html(toc.toHTML()).addClass('tocBd')
     tocBox.addClass('tocBox').append(tocBd).prependTo(container)
-      .append(tocBtn)
+      .append(tocBtn).attr('id', boxId)
 
     // create styles
     // use link element before build (for test)
