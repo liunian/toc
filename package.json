@@ -10,7 +10,7 @@
   "keywords": [
     "toc"
   ],
-  "author": "白荻",
+  "author": "liunian",
   "license": "MIT",
   "devDependencies": {
     "gulp": "~3.8.10",
