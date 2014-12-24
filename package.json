@@ -1,5 +1,5 @@
 {
-  "name": "gitlabHelper",
+  "name": "toc",
   "version": "1.1.0",
   "description": "create table of contents according h1 to h6",
   "main": "index.js",
