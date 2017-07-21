@@ -1,4 +1,16 @@
-/**
+// ==UserScript==
+// @name         toc
+// @namespace    https://github.com/liunian/toc
+// @version      1.1.1
+// @description  create table of contents according h1 to h6
+// @author       liunian
+// @match        *
+// @grant        none
+// ==/UserScript==
+
+(function() {
+  'use strict';
+  /**
  * Created by bd on 12/13/14.
  */
 
@@ -327,3 +339,5 @@ if (typeof exports === 'object') {
   }
 
 })()
+
+})();
