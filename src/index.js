@@ -47,7 +47,7 @@
     var containerSelector = [
       '#readme > .markdown-body',   // github
       '#README > .wiki',           // gitlab directory
-      '#tree-content-holder > .file-holder > .file-content.wiki', // gitlab markdown file viewer
+      '.file-holder > .file-content.wiki', // gitlab markdown file viewer
       '.wiki-holder > .wiki'       // gitlab wiki page
     ]
 
