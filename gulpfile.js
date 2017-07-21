@@ -1,12 +1,24 @@
 /**
  * Created by bd on 12/15/14.
  */
-var gulp = require('gulp'),
+const gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  replace = require('gulp-replace')
+  replace = require('gulp-replace'),
+  rename = require('gulp-rename'),
+  mirror = require('gulp-mirror'),
+  pipe = require('multipipe'),
+  del = require('del'),
+  wrap = require("gulp-wrap")
+  fs = require('fs')
 
-var fs = require('fs')
+const pkg = require('./package.json')
+
+gulp.task('clean', function() {
+  return del([
+    'dist/**'
+  ])
+})
 
 gulp.task('toc', function() {
   var cssPath = 'src/toc.css'
@@ -18,11 +30,42 @@ gulp.task('toc', function() {
       .replace(/:\s+/g, ':')
       .replace(/;\s+/g, ';')
   }
+
   gulp.src(['src/Chapter.js', 'src/Toc.js', 'src/index.js'])
     .pipe(concat('toc.js'))
     .pipe(replace(/@css@/g, cssTexts))
-    .pipe(uglify())
+    .pipe(mirror(
+      rename('toc.js'),
+      pipe(
+        rename('toc.min.js'),
+        uglify()
+      ),
+      pipe(
+        rename('toc.user.js'),
+        wrap({ src: 'userScript.tpl' }, pkg)
+      )
+    ))
     .pipe(gulp.dest('dist/'))
+
+  // var sourceStream = gulp.src(['src/Chapter.js', 'src/Toc.js', 'src/index.js'])
+  //   .pipe(concat('toc.js'))
+  //   .pipe(replace(/@css@/g, cssTexts))
+
+  // sourceStream
+  //   .pipe(new PassThrough())
+  //   .pipe(rename('toc.user.js'))
+  //   .pipe(gulp.dest('dist'))
+
+  // sourceStream
+  //   .pipe(new PassThrough())
+  //   .pipe(gulp.dest('dist/'))
+
+  // sourceStream
+  //   .pipe(new PassThrough())
+  //   .pipe(uglify())
+  //   .pipe(rename('toc.min.js'))
+  //   .pipe(gulp.dest('dist/'))
+
 })
 
-gulp.task('default', ['toc'])
+gulp.task('default', ['clean', 'toc'])

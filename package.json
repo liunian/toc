@@ -22,5 +22,12 @@
     "mocha": "^2.0.1",
     "node-jquery": "~0.1.0",
     "xmlhttprequest": "~1.6.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-mirror": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-wrap": "^0.13.0",
+    "multipipe": "^1.0.2"
   }
 }
