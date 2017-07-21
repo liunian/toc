@@ -4,7 +4,7 @@
 // @version      <%= version %>
 // @description  <%= description %>
 // @author       <%= author %>
-// @match        *
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 

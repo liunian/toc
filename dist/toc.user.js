@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         toc
 // @namespace    https://github.com/liunian/toc
-// @version      1.1.1
+// @version      1.1.2
 // @description  create table of contents according h1 to h6
 // @author       liunian
-// @match        *
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
