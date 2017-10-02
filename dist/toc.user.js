@@ -289,7 +289,7 @@ if (typeof exports === 'object') {
     // create styles
     // use link element before build (for test)
     // inline css after build
-    var cssTexts = '.tocBox{position:fixed;top:200px;right:10px;margin-top:30px !important;}.tocBox .toc-show{opacity:1 !important;}.tocBox .tocBd{opacity:0;padding:5px 10px;min-width:200px;max-height:500px;border:1px solid rgba(0, 0, 0, .2);border-radius:2px;background:#fff;overflow:auto;transition:opacity .3s ease-out;}.tocBox a{text-decoration:none;}.tocBox ul{margin:0 !important;padding:0 !important;list-style:none;}.tocBox li ul{margin-left:20px !important;}.tocBox button{position:absolute;top:-20px;right:0;font-size:12px;line-height:1.2}'
+    var cssTexts = '.tocBox{position:fixed;top:200px;right:10px;margin-top:30px !important;}.tocBox .toc-show{display:block;}.tocBox .tocBd{display:none;padding:5px 10px;min-width:200px;max-height:500px;border:1px solid rgba(0, 0, 0, .2);border-radius:2px;background:#fff;overflow:auto;}.tocBox a{text-decoration:none;}.tocBox ul{margin:0 !important;padding:0 !important;list-style:none;}.tocBox li ul{margin-left:20px !important;}.tocBox button{position:absolute;top:-20px;right:0;font-size:12px;line-height:1.2}'
 
     if (cssTexts === '@' + 'css@') {
       var linkEle = document.createElement('link')
