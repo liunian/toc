@@ -6,7 +6,7 @@
 }
 
 .tocBox .toc-show {
-  display: block;
+  display: block !important;
 }
 
 .tocBox .tocBd {
